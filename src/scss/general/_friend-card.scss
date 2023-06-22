@@ -1,0 +1,57 @@
+.friend-card {
+  width: 270px;
+  height: 435px;
+  
+  background-color: $color-light-s;
+  border-radius: 9px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $color-light-xl;
+  }
+
+  &:hover .friend-card__learn-btn {
+    background-color: $color-primary;
+  }
+}
+
+.friend-card__img {
+  vertical-align: bottom;
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.friend-card__name {
+  margin: 0;
+  margin-top: 30px;
+  
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.friend-card__learn-btn {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  width: 187px;
+  height: 52px;
+
+  font-size: 17px;
+  line-height: 22px;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+

@@ -1,0 +1,218 @@
+.our-friends {
+  background-color: $color-light-l;
+}
+
+.our-friends__wrapper {
+  max-width: 1200px;
+  padding: 80px 40px 100px;
+  margin: auto;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 300px;
+    padding: 42px 10px;
+  }
+}
+
+.our-friends__title {
+  margin: auto;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+
+.our-friends__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  @media (max-width: $tablet-width) {
+    justify-content: space-around;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 41px;
+    display: grid;
+    justify-content: normal;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    column-gap: 80px;
+  }
+}
+
+.our-friends__slider-btn {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+
+  background-color: transparent;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  background-image: url("../assets/images/index/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-self: right;
+  }
+
+  &--forward {
+    transform: rotate(-180deg);
+
+    @media (max-width: $mobile-width) {
+      justify-self: left;
+    }
+  }
+}
+
+.our-friends__cards-wrapper {
+  width: 1020px;
+  padding: 15px 0;
+  overflow-x: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 590px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
+}
+
+@keyframes move-left {
+  from {left: -1125px;}
+  to {left: -35px;}
+}
+
+@keyframes move-right {
+  from {left: -1125px;}
+  to {left: -2215px;}
+}
+
+@media (max-width: $tablet-width) {
+  @keyframes move-left {
+    from {left: -635px;}
+    to {left: -15px;}
+  }
+  
+  @keyframes move-right {
+    from {left: -635px;}
+    to {left: -1255px;}
+  }
+}
+
+@media (max-width: $mobile-width) {
+  @keyframes move-left {
+    from {left: -300px;}
+    to {left: 0;}
+  }
+  
+  @keyframes move-right {
+    from {left: -300px;}
+    to {left: -600px;}
+  }
+}
+
+.our-friends__cards-container {
+  position: relative;
+  left: -1125px;
+  display: flex;
+
+  
+  &--transition-left {
+    animation-name: move-left;
+    animation-duration: 0.8s;
+  }
+
+  
+  &--transition-right {
+    animation-name: move-right;
+    animation-duration: 0.8s;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: -635px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -300px;
+  }
+}
+
+.our-friends__cards {
+  min-width: 1090px;
+  display: flex;
+  column-gap: 90px;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    min-width: 620px;
+    column-gap: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 300px;
+  }
+
+  .friend-card {
+    @media (max-width: $tablet-width) {
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    
+      @media (max-width: $mobile-width) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+  }
+}
+
+.our-friends__link {
+  display: block;
+  width: 260px;
+  height: 52px;
+  margin: auto;
+  margin-top: 60px;
+
+  font-size: 17px;
+  line-height: 52px;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  background-color: $color-primary;
+  text-decoration: none;
+  border-radius: 100px;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 42px;
+  }
+}

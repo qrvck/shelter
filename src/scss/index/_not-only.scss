@@ -1,0 +1,122 @@
+.not-only {
+  background: url("../assets/images/general/noise_transparent_background.png"), radial-gradient(100% 215.42% at 0% 0%, $start-screen-gradient-background-1 0%, $start-screen-gradient-background-2 100%);
+}
+
+.not-only__wrapper {
+  max-width: 1200px;
+  padding: 180px 40px 0 40px;
+  margin: auto;
+  
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 150px 30px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 300px;
+    padding: 149px 10px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    row-gap: 105px;
+  }
+}
+
+.not-only__text-wrapper {
+  padding-top: 163px;
+
+  @media (max-width: $tablet-width) {
+    width: 65%;
+    align-self: center;
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+  }
+}
+
+.not-only__title {
+  margin: 0;
+  width: 310px;
+
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  color: $color-light-xl;
+
+  @media (max-width: $tablet-width) {
+    width: 87%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: auto;
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
+
+.not-only__text {
+  margin: 0;
+  margin-top: 42px;
+  width: 460px;
+
+  font-family: $arial-font;
+  color: $color-dark-s;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+
+}
+
+.not-only__link {
+  display: flex;
+  width: 207px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 42px;
+
+  font-size: 17px;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+  color: $color-dark-3xl;
+  background-color: $color-primary;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.not-only__img {
+  width: 698px;
+  height: 728px;
+
+  @media (max-width: $tablet-width) {
+    align-self: flex-end;
+    width: 569px;
+    height: 593px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 260px;
+    height: 272px;
+  }
+}
